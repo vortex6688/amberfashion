@@ -16,7 +16,10 @@ body {
     background-color: rgb(210, 152, 82);
     /* background-image: url(images/background.jpg); */
     background-size: auto;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;  
+    height: 100%; 
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
 }
 h1 {
     text-align:center;
@@ -33,6 +36,9 @@ p {
 main {
     max-width: 600px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 header {
    text-align: center;
@@ -51,5 +57,4 @@ nav a {
     font-size: 25px;
     padding-right: 10px;
     padding-left: 10px;
-    
 }
