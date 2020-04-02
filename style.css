@@ -22,10 +22,17 @@ body {
     grid-template-rows: auto 1fr auto; 
 }
 h1 {
-    text-align:center;
-    font-style: italic;
+    font-family: scriptina-pro;
+    line-height: 24px; 
+    font-size: 52px;
     color: black;
-    font-size: 40px;
+}
+.page-title {
+    padding-bottom: 1.5em;
+}
+h2 {
+    font-style: italic; 
+    margin-top: 0.5em;
 }
 p {
     color: black;
@@ -42,6 +49,7 @@ main {
 }
 header {
    text-align: center;
+   margin-top: 4em;
 }
 a {
     color: black;
