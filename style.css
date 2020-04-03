@@ -12,57 +12,74 @@
 html {
     height: 100%;
 }
+
 body {
-    background-color: rgb(210, 152, 82);
-    /* background-image: url(images/background.jpg); */
-    background-size: auto;
-    background-repeat: no-repeat;  
-    height: 100%; 
-    display: grid;
-    grid-template-rows: auto 1fr auto; 
-}
-h1 {
-    font-family: scriptina-pro;
-    line-height: 24px; 
-    font-size: 52px;
-    color: black;
-}
-.page-title {
-    padding-bottom: 1.5em;
-}
-h2 {
-    font-style: italic; 
-    margin-top: 0.5em;
-}
-p {
-    color: black;
-    font-size: 15px;
-    text-align: center;
-    font-style: italic;
-}
-main {
-    max-width: 600px;
-    margin: auto;
+    background-color: #f8c07b;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
+
+
 header {
-   text-align: center;
-   margin-top: 4em;
-}
-a {
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-}
-nav {
+    background: rgba(171, 168, 168, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    position: fixed;
+    width: 100%;
+    padding: 1em 0;
+}
+
+nav {
+    padding-right: 1em;
 }
 nav a {
     text-decoration: none;
     font-size: 25px;
     padding-right: 10px;
     padding-left: 10px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title h1 {
+    font-family: scriptina-pro; 
+    color: #fff;
+    padding-left: 1em;
+}
+.title h2 {
+    padding-left: 1em;
+    color: #fff;
+    margin-top: -1em;
+    font-style: italic; 
+}
+
+p {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+}
+
+.page-title {
+    padding-bottom: 1.5em;
+}
+
+.banner {
+    /* replace mv units with % or static units calculated pragrammatically */
+    height: 100vh;
+    background: url('images/ruka.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+main {
+    text-align: center;
 }
